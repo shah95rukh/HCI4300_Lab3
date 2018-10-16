@@ -12,6 +12,11 @@
 		AE28EC9B216FD40300327EE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE28EC99216FD40300327EE5 /* Main.storyboard */; };
 		AE28EC9D216FD40500327EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE28EC9C216FD40500327EE5 /* Assets.xcassets */; };
 		AE28ECA0216FD40500327EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE28EC9E216FD40500327EE5 /* LaunchScreen.storyboard */; };
+		AE28ECA8216FD92900327EE5 /* SettiingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE28ECA7216FD92900327EE5 /* SettiingsViewController.swift */; };
+		AE28ECAA216FD93800327EE5 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE28ECA9216FD93800327EE5 /* ScheduleViewController.swift */; };
+		AE28ECAC216FF18900327EE5 /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE28ECAB216FF18900327EE5 /* SetTimeViewController.swift */; };
+		AE28ECAE216FF1AB00327EE5 /* ChangeTempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE28ECAD216FF1AB00327EE5 /* ChangeTempViewController.swift */; };
+		AE47DCFC2171693800E93FE8 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE47DCFB2171693800E93FE8 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		AE28EC9C216FD40500327EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE28EC9F216FD40500327EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE28ECA1216FD40500327EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE28ECA7216FD92900327EE5 /* SettiingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettiingsViewController.swift; sourceTree = "<group>"; };
+		AE28ECA9216FD93800327EE5 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		AE28ECAB216FF18900327EE5 /* SetTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
+		AE28ECAD216FF1AB00327EE5 /* ChangeTempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTempViewController.swift; sourceTree = "<group>"; };
+		AE47DCFB2171693800E93FE8 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +66,12 @@
 			children = (
 				AE28EC95216FD40300327EE5 /* AppDelegate.swift */,
 				AE28EC97216FD40300327EE5 /* ViewController.swift */,
+				AE47DCFB2171693800E93FE8 /* ModalViewController.swift */,
 				AE28EC99216FD40300327EE5 /* Main.storyboard */,
+				AE28ECAD216FF1AB00327EE5 /* ChangeTempViewController.swift */,
+				AE28ECAB216FF18900327EE5 /* SetTimeViewController.swift */,
+				AE28ECA7216FD92900327EE5 /* SettiingsViewController.swift */,
+				AE28ECA9216FD93800327EE5 /* ScheduleViewController.swift */,
 				AE28EC9C216FD40500327EE5 /* Assets.xcassets */,
 				AE28EC9E216FD40500327EE5 /* LaunchScreen.storyboard */,
 				AE28ECA1216FD40500327EE5 /* Info.plist */,
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE28ECAE216FF1AB00327EE5 /* ChangeTempViewController.swift in Sources */,
+				AE28ECAC216FF18900327EE5 /* SetTimeViewController.swift in Sources */,
+				AE28ECA8216FD92900327EE5 /* SettiingsViewController.swift in Sources */,
 				AE28EC98216FD40300327EE5 /* ViewController.swift in Sources */,
 				AE28EC96216FD40300327EE5 /* AppDelegate.swift in Sources */,
+				AE28ECAA216FD93800327EE5 /* ScheduleViewController.swift in Sources */,
+				AE47DCFC2171693800E93FE8 /* ModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
