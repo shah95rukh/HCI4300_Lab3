@@ -15,22 +15,23 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Temp: UILabel!
     
+    @IBOutlet weak var setTemo: UILabel!
     @IBAction func increaseTemp(_ sender: UITapGestureRecognizer) {
         // Celsius temp change
-        if (Temp.text == "21") {
-            Temp.text? = "22"
-        } else if (Temp.text == "22") {
-            Temp.text? = "23"
+        if (setTemo.text == "21") {
+            setTemo.text? = "22"
+        } else if (setTemo.text == "22") {
+            setTemo.text? = "23"
         }
         
         // Fahr temp change
-        if (Temp.text == "71") {
-            Temp.text? = "72"
-        } else if (Temp.text == "72") {
-            Temp.text? = "73"
+        if (setTemo.text == "71") {
+            setTemo.text? = "72"
+        } else if (setTemo.text == "72") {
+            setTemo.text? = "73"
         }
         
-        if let temperature = Temp.text {
+        if let temperature = setTemo.text {
             let temp = Int(temperature)
             UserDefaults.standard.set(temp, forKey: "temp_value")
         }
@@ -53,20 +54,20 @@ class ViewController: UIViewController {
     
     @IBAction func decreaseTemp(_ sender: Any) {
         // Celsius temp change
-        if (Temp.text == "22") {
-            Temp.text? = "21"
-        } else if (Temp.text == "23") {
-            Temp.text? = "22"
+        if (setTemo.text == "22") {
+            setTemo.text? = "21"
+        } else if (setTemo.text == "23") {
+            setTemo.text? = "22"
         }
         
         // Fahr temp change
-        if (Temp.text == "73") {
-            Temp.text? = "72"
-        } else if (Temp.text == "72") {
-            Temp.text? = "71"
+        if (setTemo.text == "73") {
+            setTemo.text? = "72"
+        } else if (setTemo.text == "72") {
+            setTemo.text? = "71"
         }
         
-        if let temperature = Temp.text {
+        if let temperature = setTemo.text {
             let temp = Int(temperature)
             UserDefaults.standard.set(temp, forKey: "temp_value")
         }
@@ -96,22 +97,29 @@ class ViewController: UIViewController {
             Temp.text = String(temp_value)
         }
         
+        // Pull Set Temperature
+        let set_tempObject = UserDefaults.standard.object(forKey: "set_temp")
+        
+        if let set_temp = set_tempObject as? Int {
+            setTemo.text = String(set_temp)
+        }
+        
         // Do Celsius to Fahr Conversion
         if (tempUnitLabel.text == "°F") {
-            if (Temp.text == "23") {
-                Temp.text? = "73"
-            } else if (Temp.text == "21") {
-                Temp.text? = "71"
-            } else if (Temp.text == "22") {
-                Temp.text? = "72"
+            if (setTemo.text == "23") {
+                setTemo.text? = "73"
+            } else if (setTemo.text == "21") {
+                setTemo.text? = "71"
+            } else if (setTemo.text == "22") {
+                setTemo.text? = "72"
             }
         } else if (tempUnitLabel.text == "°C") {
-            if (Temp.text == "73") {
-                Temp.text? = "23"
-            } else if (Temp.text == "71") {
-                Temp.text? = "21"
-            } else if (Temp.text == "72") {
-                Temp.text? = "22"
+            if (setTemo.text == "73") {
+                setTemo.text? = "23"
+            } else if (setTemo.text == "71") {
+                setTemo.text? = "21"
+            } else if (setTemo.text == "72") {
+                setTemo.text? = "22"
             }
         }
     }
